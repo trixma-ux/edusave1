@@ -1,0 +1,64 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/**/GeneratedPluginRegistrant.kt
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# iOS/macOS
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/App.framework
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Runner/Assets.car
+**/ios/Pods/
+**/macos/Pods/
+**/macos/Flutter/GeneratedPluginRegistrant.*
+
+# Xcode
+**/*.xcworkspace
+**/*.xcuserstate
+**/*.xcuserdata
+**/*.moved-aside
+**/DerivedData/
+
+# VS Code
+.vscode/
+.history/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Misc
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Coverage
+coverage/
+
+# Firebase/Secrets (ensure you manage secrets securely)
+**/google-services.json
+**/GoogleService-Info.plist
+.env
+.env.*
