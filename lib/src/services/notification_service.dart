@@ -1,4 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:timezone/timezone.dart' as tz;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final notificationServiceProvider = Provider<NotificationService>((ref) => NotificationService());
@@ -23,7 +24,7 @@ class NotificationService {
       id,
       title,
       body,
-      dateTime.toLocal().toUtc(),
+      tz.TZDateTime.from(dateTime.toLocal().toUtc(), tz.getLocation('UTC')),
       NotificationDetails(android: androidDetails),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
       uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,

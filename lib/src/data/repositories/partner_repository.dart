@@ -27,6 +27,25 @@ class PartnerRepository {
     await db.delete('project_partners', where: 'projectId = ? AND partnerId = ?', whereArgs: [projectId, partnerId]);
   }
 
+  Future<Partner?> getById(int id) async {
+    final db = await DbHelper.instance.database;
+    final maps = await db.query('partners', where: 'id = ?', whereArgs: [id]);
+    if (maps.isNotEmpty) {
+      return Partner.fromMap(maps.first);
+    }
+    return null;
+  }
+
+  Future<int> update(Partner partner) async {
+    final db = await DbHelper.instance.database;
+    return db.update('partners', partner.toMap(), where: 'id = ?', whereArgs: [partner.id]);
+  }
+
+  Future<int> delete(int id) async {
+    final db = await DbHelper.instance.database;
+    return db.delete('partners', where: 'id = ?', whereArgs: [id]);
+  }
+
   Future<List<Partner>> forProject(int projectId) async {
     final db = await DbHelper.instance.database;
     final rows = await db.rawQuery('''

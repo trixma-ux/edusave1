@@ -23,7 +23,7 @@ class _EventsScreenState extends ConsumerState<EventsScreen> {
     return FutureBuilder(
       future: ref.read(eventRepositoryProvider).getUpcoming(),
       builder: (context, snapshot) {
-        final items = snapshot.data ?? <EventModel>[];
+        final items = snapshot.data ?? <Event>[];
         return Scaffold(
           body: ListView.separated(
             padding: const EdgeInsets.all(12),
@@ -40,7 +40,7 @@ class _EventsScreenState extends ConsumerState<EventsScreen> {
           ),
           floatingActionButton: FloatingActionButton.extended(
             onPressed: () async {
-              final created = await showDialog<EventModel>(context: context, builder: (_) => const _EventDialog());
+              final created = await showDialog<Event>(context: context, builder: (_) => const _EventDialog());
               if (created != null) {
                 final repo = ref.read(eventRepositoryProvider);
                 final id = await repo.create(created);
@@ -128,7 +128,13 @@ class _EventDialogState extends State<_EventDialog> {
             if (!_formKey.currentState!.validate()) return;
             Navigator.pop(
               context,
-              EventModel(title: _title.text.trim(), location: _location.text.trim().isEmpty ? null : _location.text.trim(), date: _date),
+              Event(
+                title: _title.text.trim(), 
+                location: _location.text.trim().isEmpty ? null : _location.text.trim(), 
+                date: _date,
+                createdAt: DateTime.now(),
+                updatedAt: DateTime.now(),
+              ),
             );
           },
           child: const Text('Enregistrer'),

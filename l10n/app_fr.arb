@@ -1,0 +1,229 @@
+{
+  "@@locale": "fr",
+  "appTitle": "OneSave",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "programs": "Programmes",
+  "@programs": {
+    "description": "Programs section title"
+  },
+  "projects": "Projets",
+  "@projects": {
+    "description": "Projects section title"
+  },
+  "events": "Rencontres",
+  "@events": {
+    "description": "Events section title"
+  },
+  "statistics": "Statistiques",
+  "@statistics": {
+    "description": "Statistics section title"
+  },
+  "settings": "Paramètres",
+  "@settings": {
+    "description": "Settings section title"
+  },
+  "beneficiaries": "Bénéficiaires",
+  "@beneficiaries": {
+    "description": "Beneficiaries section title"
+  },
+  "partners": "Partenaires",
+  "@partners": {
+    "description": "Partners section title"
+  },
+  "theme": "Thème",
+  "@theme": {
+    "description": "Theme setting"
+  },
+  "light": "Clair",
+  "@light": {
+    "description": "Light theme"
+  },
+  "dark": "Sombre",
+  "@dark": {
+    "description": "Dark theme"
+  },
+  "system": "Système",
+  "@system": {
+    "description": "System theme"
+  },
+  "synchronization": "Synchronisation",
+  "@synchronization": {
+    "description": "Synchronization setting"
+  },
+  "online": "En ligne",
+  "@online": {
+    "description": "Online status"
+  },
+  "offline": "Hors ligne",
+  "@offline": {
+    "description": "Offline status"
+  },
+  "lastSync": "Dernière sync: {time}",
+  "@lastSync": {
+    "description": "Last synchronization time",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "syncError": "Erreur: {error}",
+  "@syncError": {
+    "description": "Synchronization error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications setting"
+  },
+  "enabled": "Activées",
+  "@enabled": {
+    "description": "Enabled status"
+  },
+  "disabled": "Désactivées",
+  "@disabled": {
+    "description": "Disabled status"
+  },
+  "language": "Langue",
+  "@language": {
+    "description": "Language setting"
+  },
+  "french": "Français",
+  "@french": {
+    "description": "French language"
+  },
+  "english": "Anglais",
+  "@english": {
+    "description": "English language"
+  },
+  "security": "Sécurité et confidentialité",
+  "@security": {
+    "description": "Security and privacy setting"
+  },
+  "encryptedData": "Données chiffrées localement",
+  "@encryptedData": {
+    "description": "Encrypted data description"
+  },
+  "about": "À propos",
+  "@about": {
+    "description": "About section"
+  },
+  "copyright": "EduSave © CNF Côte d'Ivoire",
+  "@copyright": {
+    "description": "Copyright information"
+  },
+  "login": "Connexion",
+  "@login": {
+    "description": "Login button"
+  },
+  "username": "Nom d'utilisateur",
+  "@username": {
+    "description": "Username field"
+  },
+  "password": "Mot de passe",
+  "@password": {
+    "description": "Password field"
+  },
+  "loginError": "Erreur de connexion",
+  "@loginError": {
+    "description": "Login error message"
+  },
+  "invalidCredentials": "Identifiants invalides",
+  "@invalidCredentials": {
+    "description": "Invalid credentials message"
+  },
+  "createProject": "Créer un projet",
+  "@createProject": {
+    "description": "Create project button"
+  },
+  "projectTitle": "Titre du projet",
+  "@projectTitle": {
+    "description": "Project title field"
+  },
+  "projectDescription": "Description du projet",
+  "@projectDescription": {
+    "description": "Project description field"
+  },
+  "projectStatus": "Statut du projet",
+  "@projectStatus": {
+    "description": "Project status field"
+  },
+  "planned": "Planifié",
+  "@planned": {
+    "description": "Planned status"
+  },
+  "inProgress": "En cours",
+  "@inProgress": {
+    "description": "In progress status"
+  },
+  "completed": "Terminé",
+  "@completed": {
+    "description": "Completed status"
+  },
+  "closed": "Clôturé",
+  "@closed": {
+    "description": "Closed status"
+  },
+  "startDate": "Date de début",
+  "@startDate": {
+    "description": "Start date field"
+  },
+  "endDate": "Date de fin",
+  "@endDate": {
+    "description": "End date field"
+  },
+  "save": "Enregistrer",
+  "@save": {
+    "description": "Save button"
+  },
+  "cancel": "Annuler",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "delete": "Supprimer",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "edit": "Modifier",
+  "@edit": {
+    "description": "Edit button"
+  },
+  "search": "Rechercher",
+  "@search": {
+    "description": "Search field"
+  },
+  "noData": "Aucune donnée disponible",
+  "@noData": {
+    "description": "No data message"
+  },
+  "loading": "Chargement...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "error": "Erreur",
+  "@error": {
+    "description": "Error message"
+  },
+  "success": "Succès",
+  "@success": {
+    "description": "Success message"
+  },
+  "confirm": "Confirmer",
+  "@confirm": {
+    "description": "Confirm button"
+  },
+  "yes": "Oui",
+  "@yes": {
+    "description": "Yes button"
+  },
+  "no": "Non",
+  "@no": {
+    "description": "No button"
+  }
+}

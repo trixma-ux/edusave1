@@ -27,6 +27,25 @@ class BeneficiaryRepository {
     await db.delete('project_beneficiaries', where: 'projectId = ? AND beneficiaryId = ?', whereArgs: [projectId, beneficiaryId]);
   }
 
+  Future<Beneficiary?> getById(int id) async {
+    final db = await DbHelper.instance.database;
+    final maps = await db.query('beneficiaries', where: 'id = ?', whereArgs: [id]);
+    if (maps.isNotEmpty) {
+      return Beneficiary.fromMap(maps.first);
+    }
+    return null;
+  }
+
+  Future<int> update(Beneficiary beneficiary) async {
+    final db = await DbHelper.instance.database;
+    return db.update('beneficiaries', beneficiary.toMap(), where: 'id = ?', whereArgs: [beneficiary.id]);
+  }
+
+  Future<int> delete(int id) async {
+    final db = await DbHelper.instance.database;
+    return db.delete('beneficiaries', where: 'id = ?', whereArgs: [id]);
+  }
+
   Future<List<Beneficiary>> forProject(int projectId) async {
     final db = await DbHelper.instance.database;
     final rows = await db.rawQuery('''

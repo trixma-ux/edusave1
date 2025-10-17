@@ -114,7 +114,13 @@ class _ProjectDialogState extends State<_ProjectDialog> {
             if (!_formKey.currentState!.validate()) return;
             Navigator.pop(
               context,
-              Project(title: _title.text.trim(), program: _program, status: _status),
+              Project(
+                title: _title.text.trim(), 
+                program: _program, 
+                status: _status,
+                createdAt: DateTime.now(),
+                updatedAt: DateTime.now(),
+              ),
             );
           },
           child: const Text('Enregistrer'),

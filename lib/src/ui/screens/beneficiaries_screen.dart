@@ -106,7 +106,13 @@ class _BeneficiaryDialogState extends State<_BeneficiaryDialog> {
         ElevatedButton(
           onPressed: () {
             if (!_formKey.currentState!.validate()) return;
-            Navigator.pop(context, Beneficiary(fullName: _name.text.trim(), gender: _gender, segment: _segment));
+            Navigator.pop(context, Beneficiary(
+              fullName: _name.text.trim(), 
+              gender: _gender, 
+              segment: _segment,
+              createdAt: DateTime.now(),
+              updatedAt: DateTime.now(),
+            ));
           },
           child: const Text('Enregistrer'),
         ),

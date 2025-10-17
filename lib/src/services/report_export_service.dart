@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:excel/excel.dart' as xls;
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
@@ -46,23 +45,23 @@ class ReportExportService {
   Future<File> exportProjectExcel(Project project, WidgetRef ref) async {
     final excel = xls.Excel.createExcel();
     final sheet = excel['Projet'];
-    sheet.appendRow(['Titre', project.title]);
-    sheet.appendRow(['Programme', project.program]);
-    sheet.appendRow(['Statut', project.status]);
+    sheet.appendRow([xls.TextCellValue('Titre'), xls.TextCellValue(project.title)]);
+    sheet.appendRow([xls.TextCellValue('Programme'), xls.TextCellValue(project.program)]);
+    sheet.appendRow([xls.TextCellValue('Statut'), xls.TextCellValue(project.status)]);
 
     final beneficiaries = await ref.read(beneficiaryRepositoryProvider).forProject(project.id!);
     final partners = await ref.read(partnerRepositoryProvider).forProject(project.id!);
 
     final sh2 = excel['Bénéficiaires'];
-    sh2.appendRow(['Nom', 'Segment', 'Genre']);
+    sh2.appendRow([xls.TextCellValue('Nom'), xls.TextCellValue('Segment'), xls.TextCellValue('Genre')]);
     for (final b in beneficiaries) {
-      sh2.appendRow([b.fullName, b.segment ?? '', b.gender ?? '']);
+      sh2.appendRow([xls.TextCellValue(b.fullName), xls.TextCellValue(b.segment ?? ''), xls.TextCellValue(b.gender ?? '')]);
     }
 
     final sh3 = excel['Partenaires'];
-    sh3.appendRow(['Nom', 'Type']);
+    sh3.appendRow([xls.TextCellValue('Nom'), xls.TextCellValue('Type')]);
     for (final ptn in partners) {
-      sh3.appendRow([ptn.name, ptn.type ?? '']);
+      sh3.appendRow([xls.TextCellValue(ptn.name), xls.TextCellValue(ptn.type ?? '')]);
     }
 
     final file = await _createOutputFile('${_safe(project.title)}.xlsx');

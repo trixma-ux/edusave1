@@ -19,6 +19,15 @@ class ProjectRepository {
     return db.update('projects', project.toMap(), where: 'id = ?', whereArgs: [project.id]);
   }
 
+  Future<Project?> getById(int id) async {
+    final db = await DbHelper.instance.database;
+    final maps = await db.query('projects', where: 'id = ?', whereArgs: [id]);
+    if (maps.isNotEmpty) {
+      return Project.fromMap(maps.first);
+    }
+    return null;
+  }
+
   Future<int> delete(int id) async {
     final db = await DbHelper.instance.database;
     return db.delete('projects', where: 'id = ?', whereArgs: [id]);

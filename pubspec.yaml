@@ -1,5 +1,5 @@
-name: edusave
-description: Application mobile offline pour la CNF - EduSave (Flutter + SQLite)
+name: onesave
+description: Application multi-plateforme offline pour la CNF - OneSave (Flutter + SQLite)
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -9,18 +9,38 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   cupertino_icons: ^1.0.6
   flutter_riverpod: ^2.5.1
+  # Database dependencies with platform support
   sqflite_sqlcipher: ^2.2.1
   path: ^1.9.0
   path_provider: ^2.1.3
+  # Secure storage with platform support
   flutter_secure_storage: ^9.2.2
+  # Web-compatible storage
+  shared_preferences: ^2.2.2
+  # Internationalization
   intl: ^0.19.0
+  # Notifications (mobile only)
   flutter_local_notifications: ^17.2.1+2
+  # Utilities
   uuid: ^4.5.1
+  # Charts and UI
   fl_chart: ^0.69.0
   pdf: ^3.11.0
   excel: ^4.0.3
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  glassmorphism: ^3.0.0
+  # Network and connectivity
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+  # Firebase (optional for push notifications) - disabled for web
+  # firebase_core: ^2.24.2
+  # firebase_messaging: ^14.7.10
 
 flutter:
   uses-material-design: true

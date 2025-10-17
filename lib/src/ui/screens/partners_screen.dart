@@ -95,7 +95,12 @@ class _PartnerDialogState extends State<_PartnerDialog> {
         ElevatedButton(
           onPressed: () {
             if (!_formKey.currentState!.validate()) return;
-            Navigator.pop(context, Partner(name: _name.text.trim(), type: _type));
+            Navigator.pop(context, Partner(
+              name: _name.text.trim(), 
+              type: _type,
+              createdAt: DateTime.now(),
+              updatedAt: DateTime.now(),
+            ));
           },
           child: const Text('Enregistrer'),
         ),
