@@ -1,5 +1,7 @@
 # EduSave (CNF Côte d’Ivoire)
 
+[![Flutter CI](https://github.com/trixma-ux/edusave1/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/trixma-ux/edusave1/actions/workflows/flutter-ci.yml)
+
 Application mobile Flutter hors-ligne avec SQLite chiffré (SQLCipher).
 
 ## Lancer
@@ -8,6 +10,12 @@ flutter pub get
 flutter run
 ```
 Identifiants: `admin` / `admin123`
+
+## Intégration continue (CI)
+- Lint/analyse: `flutter analyze`
+- Tests: `flutter test`
+- Build APK debug: `flutter build apk --debug`
+La CI s’exécute sur chaque `push`/`PR` vers `main`.
 
 ## Modules
 - Programmes: CLAC, IFADEM, ELAN (liste des projets par programme)
