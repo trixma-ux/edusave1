@@ -34,6 +34,9 @@ class CurrentUserNotifier extends StateNotifier<User?> {
     return false;
   }
 
+  /// Définit l'utilisateur connecté (après authentification réussie).
+  void setUser(User user) => state = user;
+
   void logout() {
     state = null;
   }

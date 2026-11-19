@@ -41,19 +41,28 @@ class User {
         isActive: isActive ?? this.isActive,
       );
 
-  factory User.fromMap(Map<String, Object?> map) => User(
-        id: map['id'] as int?,
-        name: map['name'] as String,
-        email: map['email'] as String?,
-        role: UserRole.values.firstWhere(
-          (e) => e.name == map['role'],
-          orElse: () => UserRole.user,
-        ),
-        passwordHash: map['passwordHash'] as String,
-        createdAt: DateTime.parse(map['createdAt'] as String),
-        updatedAt: DateTime.parse(map['updatedAt'] as String),
-        isActive: (map['isActive'] as int?) == 1,
-      );
+  /// Lecture tolérante : le schéma SQLite local (`users`) ne contient pas
+  /// forcément `createdAt`, `updatedAt` ni `isActive`, et le rôle peut être
+  /// stocké en majuscules (ex. « ADMIN »).
+  factory User.fromMap(Map<String, Object?> map) {
+    DateTime parseDate(Object? v) =>
+        (v is String ? DateTime.tryParse(v) : null) ?? DateTime.now();
+    final roleName = (map['role'] as String?)?.toLowerCase();
+    final active = map['isActive'];
+    return User(
+      id: map['id'] as int?,
+      name: map['name'] as String,
+      email: map['email'] as String?,
+      role: UserRole.values.firstWhere(
+        (e) => e.name.toLowerCase() == roleName,
+        orElse: () => UserRole.user,
+      ),
+      passwordHash: map['passwordHash'] as String,
+      createdAt: parseDate(map['createdAt']),
+      updatedAt: parseDate(map['updatedAt']),
+      isActive: active == null || active == 1 || active == true,
+    );
+  }
 
   factory User.fromJson(Map<String, dynamic> json) => User(
         id: json['id'] as int?,

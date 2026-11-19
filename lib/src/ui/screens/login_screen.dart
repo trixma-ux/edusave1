@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../../services/auth_service.dart';
+import '../../providers/user_provider.dart';
 import '../widgets/animated_button.dart';
 import '../../theme/app_theme.dart';
 
@@ -193,7 +194,8 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                         setState(() => _loading = false);
                                         if (!mounted) return;
                                         if (user != null) {
-                                          Navigator.of(context).pushReplacementNamed('/home');
+                                          ref.read(currentUserProvider.notifier).setUser(user);
+                                          Navigator.of(context).pushNamedAndRemoveUntil('/home', (_) => false);
                                         } else {
                                           ScaffoldMessenger.of(context).showSnackBar(
                                             SnackBar(
