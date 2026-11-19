@@ -27,7 +27,7 @@ class _OneSaveAppState extends ConsumerState<OneSaveApp> {
     final currentLocale = ref.watch(currentLocaleProvider);
 
     return MaterialApp(
-      title: 'OneSave',
+      title: 'Edusave',
       debugShowCheckedModeBanner: false,
       theme: theme,
       themeMode: themeMode,
