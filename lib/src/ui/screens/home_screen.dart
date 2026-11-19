@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import '../../providers/app_providers.dart';
-import '../widgets/animated_card.dart';
-import '../widgets/animated_button.dart';
-import '../widgets/loading_widgets.dart';
 import '../widgets/offline_indicator.dart';
 import '../widgets/sync_widget.dart';
 import '../../theme/app_theme.dart';

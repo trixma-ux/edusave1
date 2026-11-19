@@ -77,7 +77,7 @@ class ApiService {
   // Test API connection
   Future<ApiTestResult> testConnection() async {
     try {
-      final response = await _dio.get('/health');
+      await _dio.get('/health');
       return ApiTestResult(
         success: true,
         message: 'Connection successful',
