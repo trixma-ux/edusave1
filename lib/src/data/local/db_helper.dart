@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
@@ -9,14 +11,23 @@ class DbHelper {
   static final DbHelper instance = DbHelper._internal();
 
   static const _dbName = 'edusave.db';
-  static const _dbVersion = 1;
+  static const _dbVersion = 2;
   Database? _database;
 
   final _secureStorage = const FlutterSecureStorage();
 
+  Future<Database>? _opening;
+
+  /// Ouvre la base une seule fois, même en cas d'appels concurrents.
   Future<Database> get database async {
     if (_database != null) return _database!;
-    _database = await _initDb();
+    _opening ??= _initDb();
+    try {
+      _database = await _opening!;
+    } catch (_) {
+      _opening = null;
+      rethrow;
+    }
     return _database!;
   }
 
@@ -36,6 +47,20 @@ class DbHelper {
   }
 
   Future<Database> _initDb() async {
+    if (kIsWeb) {
+      // Sur le web, sqflite natif (MethodChannel) et path_provider ne sont pas
+      // disponibles : on utilise SQLite compilé en WebAssembly (IndexedDB).
+      return databaseFactoryFfiWeb.openDatabase(
+        _dbName,
+        options: OpenDatabaseOptions(
+          version: _dbVersion,
+          onCreate: (db, version) async {
+            await _createSchema(db);
+          },
+          onUpgrade: _migrate,
+        ),
+      );
+    }
     final dir = await getApplicationDocumentsDirectory();
     final path = p.join(dir.path, _dbName);
     final key = await _getOrCreateKey();
@@ -47,10 +72,33 @@ class DbHelper {
       onCreate: (db, version) async {
         await _createSchema(db);
       },
-      onUpgrade: (db, oldVersion, newVersion) async {
-        // Handle migrations when bumping version
-      },
+      onUpgrade: _migrate,
     );
+  }
+
+  /// v1 → v2 : les modèles écrivent `createdAt`/`updatedAt` (et `isActive`
+  /// pour les utilisateurs) mais le schéma v1 ne les déclarait pas, ce qui
+  /// faisait échouer toute création ou connexion.
+  static Future<void> _migrate(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      final now = DateTime.now().toIso8601String();
+      for (final table in ['users', 'projects', 'beneficiaries', 'partners', 'events']) {
+        final cols = (await db.rawQuery('PRAGMA table_info($table)'))
+            .map((c) => c['name'] as String)
+            .toSet();
+        for (final col in ['createdAt', 'updatedAt']) {
+          if (!cols.contains(col)) {
+            await db.execute('ALTER TABLE $table ADD COLUMN $col TEXT');
+          }
+        }
+        await db.update(table, {'createdAt': now}, where: 'createdAt IS NULL');
+        await db.update(table, {'updatedAt': now}, where: 'updatedAt IS NULL');
+        if (table == 'users' && !cols.contains('isActive')) {
+          await db.execute(
+              'ALTER TABLE users ADD COLUMN isActive INTEGER NOT NULL DEFAULT 1');
+        }
+      }
+    }
   }
 
   Future<void> _createSchema(Database db) async {
@@ -60,7 +108,10 @@ class DbHelper {
         name TEXT NOT NULL,
         email TEXT UNIQUE,
         role TEXT NOT NULL,
-        passwordHash TEXT NOT NULL
+        passwordHash TEXT NOT NULL,
+        createdAt TEXT,
+        updatedAt TEXT,
+        isActive INTEGER NOT NULL DEFAULT 1
       );
     ''');
 
@@ -72,7 +123,9 @@ class DbHelper {
         status TEXT NOT NULL,
         description TEXT,
         startDate TEXT,
-        endDate TEXT
+        endDate TEXT,
+        createdAt TEXT,
+        updatedAt TEXT
       );
     ''');
 
@@ -82,7 +135,9 @@ class DbHelper {
         fullName TEXT NOT NULL,
         gender TEXT,
         age INTEGER,
-        segment TEXT -- jeune/femme/cinéaste
+        segment TEXT, -- jeune/femme/cinéaste
+        createdAt TEXT,
+        updatedAt TEXT
       );
     ''');
 
@@ -90,7 +145,9 @@ class DbHelper {
       CREATE TABLE partners(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
-        type TEXT -- GAF, ambassade, ONG
+        type TEXT, -- GAF, ambassade, ONG
+        createdAt TEXT,
+        updatedAt TEXT
       );
     ''');
 
@@ -117,7 +174,9 @@ class DbHelper {
         location TEXT,
         description TEXT,
         date TEXT NOT NULL,
-        projectId INTEGER
+        projectId INTEGER,
+        createdAt TEXT,
+        updatedAt TEXT
       );
     ''');
 

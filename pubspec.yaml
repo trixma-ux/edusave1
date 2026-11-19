@@ -38,6 +38,7 @@ dependencies:
   # Network and connectivity
   dio: ^5.4.0
   connectivity_plus: ^5.0.2
+  sqflite_common_ffi_web: ^1.2.2
   # Firebase (optional for push notifications) - disabled for web
   # firebase_core: ^2.24.2
   # firebase_messaging: ^14.7.10

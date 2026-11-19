@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Fetch SQLite WebAssembly runtime (sqflite web)
+        run: dart run sqflite_common_ffi_web:setup
+
       - name: Build web
         run: flutter build web --release --base-href /edusave1/
 
