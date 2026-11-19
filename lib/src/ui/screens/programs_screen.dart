@@ -18,6 +18,7 @@ class ProgramsScreen extends ConsumerWidget {
       child: Scaffold(
         backgroundColor: OneSaveColors.background,
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: const Text('Programmes'),
           bottom: TabBar(
             tabs: const [

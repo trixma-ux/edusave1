@@ -24,6 +24,7 @@ class HomeScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: OneSaveColors.background,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Row(
           children: [
             Container(
@@ -60,12 +61,12 @@ class HomeScreen extends ConsumerWidget {
             icon: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: OneSaveColors.primary.withOpacity(0.1),
+                color: OneSaveColors.onPrimary.withOpacity(0.15),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(
                 Icons.more_vert,
-                color: OneSaveColors.primary,
+                color: OneSaveColors.onPrimary,
               ),
             ),
             onSelected: (k) {
