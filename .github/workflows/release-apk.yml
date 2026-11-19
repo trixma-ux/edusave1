@@ -5,69 +5,51 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v4
-    
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.16.0'
         channel: 'stable'
         cache: true
-    
+
     - name: Install dependencies
       run: flutter pub get
-    
+
     - name: Build APK (Release)
       run: flutter build apk --release
-    
+
     - name: Upload APK artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: onesave-apk
+        name: edusave-apk
         path: build/app/outputs/flutter-apk/app-release.apk
         retention-days: 30
-    
+
     - name: Create Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: build/app/outputs/flutter-apk/app-release.apk
-        name: OneSave ${{ github.ref_name }}
+        name: Edusave ${{ github.ref_name }}
         tag_name: ${{ github.ref_name }}
         body: |
-          ## OneSave ${{ github.ref_name }}
-          
-          ### 🚀 Nouvelles fonctionnalités
-          - Interface utilisateur moderne avec animations fluides
-          - Design glassmorphique et micro-interactions
-          - Navigation améliorée avec transitions personnalisées
-          - Cartes animées et états de chargement élégants
-          
-          ### 🎨 Améliorations UI/UX
-          - Thème Material 3 avec palette de couleurs OneSave
-          - Animations staggerées pour les listes
-          - Boutons interactifs avec feedback tactile
-          - Indicateurs de statut colorés et dynamiques
-          
-          ### 📱 Fonctionnalités
-          - Gestion des programmes (CLAC, IFADEM, ELAN)
-          - Suivi des projets avec statuts visuels
-          - Interface responsive et accessible
-          - Performance optimisée
-          
-          ### 🔧 Améliorations techniques
-          - Architecture Flutter moderne avec Riverpod
-          - Base de données SQLite chiffrée
-          - Export PDF et Excel
-          - Notifications locales
-          
-          ---
-          
-          **Télécharger l'APK ci-dessous pour installer OneSave sur votre appareil Android.**
+          ## Edusave ${{ github.ref_name }}
+
+          Release APK for Android.
         draft: false
         prerelease: false
       env:
