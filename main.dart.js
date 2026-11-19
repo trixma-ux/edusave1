@@ -127159,7 +127159,7 @@ s=A.I(a).ok.z
 if(s==null)s=m
 else{r=A.I(a).ax.k3
 r=s.bT(A.a6(B.p.ap(178.5),r.q()>>>16&255,r.q()>>>8&255,r.q()&255))
-s=r}s=A.h5(new A.aY(B.cB,A.bD(A.b([A.cI(A.b([j,B.en,A.cT(A.bD(A.b([i,A.ay("Connectez OneSave \xe0 des syst\xe8mes externes",m,m,m,m,s,m,m,m)],l),B.aQ,B.P,B.U,0,B.W),1,m)],l),B.X,B.P,B.U,0,m)],l),B.aQ,B.P,B.U,0,B.W),m),m,m,m)
+s=r}s=A.h5(new A.aY(B.cB,A.bD(A.b([A.cI(A.b([j,B.en,A.cT(A.bD(A.b([i,A.ay("Connectez Edusave \xe0 des syst\xe8mes externes",m,m,m,m,s,m,m,m)],l),B.aQ,B.P,B.U,0,B.W),1,m)],l),B.X,B.P,B.U,0,m)],l),B.aQ,B.P,B.U,0,B.W),m),m,m,m)
 i=A.I(a).ok.r
 j=A.h5(new A.aY(B.cB,A.bD(A.b([A.ay("Param\xe8tres de connexion",m,m,m,m,i==null?m:i.jZ(B.bt),m,m,m),B.b1,A.i2(!1,n.x,B.aaM,!1,m,m,m,1,!1,m,m,m,m,m,m,B.aI,m,new A.aSa()),B.b1,A.i2(!1,n.y,B.aaQ,!1,m,m,m,1,!0,m,m,m,m,m,m,B.aI,m,m),B.b1,A.i2(!1,n.z,B.aaS,!1,m,m,m,1,!0,m,m,m,m,m,m,B.aI,m,m)],l),B.aQ,B.P,B.U,0,B.W),m),m,m,m)
 i=n.Q
@@ -127171,7 +127171,7 @@ q=i?m:n.gaG6()
 p=i?B.Vf:B.aaz
 o=A.ay(i?"Test...":"Tester",m,m,m,m,m,m,m,m)
 i=A.cI(A.b([r,B.en,A.cT(new A.a3A(!0,q,m,m,m,m,m,m,!1,m,!0,m,new A.agg(o,p,m,m,m),m),1,m)],l),B.X,B.P,B.U,0,m)
-r=A.cV(A.bAr(B.zi,B.bhx,n.gaqx(),A.ul(m,m,m,m,m,m,m,m,m,B.cO,m,m,m,m,m,m,m,m,m,m)),m,1/0)
+r=A.cV(A.bAr(B.zi,B.bhy,n.gaqx(),A.ul(m,m,m,m,m,m,m,m,m,B.cO,m,m,m,m,m,m,m,m,m,m)),m,1/0)
 q=A.I(a).ok.r
 return A.ox(k,m,A.o1(m,A.MS(A.bD(A.b([s,B.dW,j,B.dW,i,B.v6,r,B.dW,A.h5(new A.aY(B.cB,A.bD(A.b([A.ay("Fonctionnalit\xe9s disponibles",m,m,m,m,q==null?m:q.jZ(B.bt),m,m,m),B.b1,n.Ae(a,B.a9i,"Import de donn\xe9es","Importer des donn\xe9es depuis des syst\xe8mes externes"),n.Ae(a,B.a9K,"Export de donn\xe9es","Exporter des donn\xe9es vers des syst\xe8mes externes"),n.Ae(a,B.lY,"Synchronisation","Synchroniser les donn\xe9es avec des syst\xe8mes externes"),n.Ae(a,B.a9o,"Upload de fichiers","T\xe9l\xe9charger des fichiers vers des syst\xe8mes externes"),n.Ae(a,B.a9n,"Download de fichiers","T\xe9l\xe9charger des fichiers depuis des syst\xe8mes externes")],l),B.aQ,B.P,B.U,0,B.W),m),m,m,m)],l),B.aQ,B.P,B.U,0,B.W),m,B.aU,B.cB,m,m,B.b6),n.w),m,m)},
 Ae(a,b,c,d){var s,r,q=null,p=A.dv(b,A.I(a).ax.b,q,20),o=A.I(a).ok.w
@@ -127208,7 +127208,7 @@ A.aS8.prototype={
 $0(){return this.a.as=!1},
 $S:0}
 A.aS1.prototype={
-$1(a){return A.mx(A.b([A.hl(B.dY,new A.aS_(a),null),A.hl(B.bgZ,new A.aS0(a),null)],t.p),B.bgS,B.bhG)},
+$1(a){return A.mx(A.b([A.hl(B.dY,new A.aS_(a),null),A.hl(B.bh_,new A.aS0(a),null)],t.p),B.bgT,B.bhG)},
 $S:149}
 A.aS_.prototype={
 $0(){return A.cy(this.a,!1).i5(!1)},
@@ -127227,7 +127227,7 @@ if(s==null||!s.gKd())return"Veuillez saisir une URL valide"
 return null},
 $S:23}
 A.aS6.prototype={
-$1(a){return A.mx(A.b([A.hl(B.bhi,new A.aS5(a),null)],t.p),B.bag,B.bhr)},
+$1(a){return A.mx(A.b([A.hl(B.bhj,new A.aS5(a),null)],t.p),B.bag,B.bhs)},
 $S:149}
 A.aS5.prototype={
 $0(){return A.cy(this.a,!1).eo()},
@@ -127277,7 +127277,7 @@ ae(){return new A.aby(new A.bb(null,t.am),new A.eq(B.c4,$.al()))}}
 A.aby.prototype={
 J(a){var s=this,r=null,q=t.N,p=t.p
 q=A.cV(A.o1(r,A.bD(A.b([A.i2(!1,s.e,B.aaL,!1,r,r,r,1,!1,r,r,r,r,r,r,B.aI,r,new A.aSK()),B.bA,A.wf(B.aaK,B.abG,new A.aSL(s),s.f,q),B.bA,A.wf(B.aaU,B.aeA,new A.aSM(s),s.r,q)],p),B.X,B.P,B.b3,0,B.W),s.d),r,420)
-return A.mx(A.b([A.hl(B.dY,new A.aSN(a),r),A.nV(B.pb,new A.aSO(s,a))],p),q,B.bhw)}}
+return A.mx(A.b([A.hl(B.dY,new A.aSN(a),r),A.nV(B.pb,new A.aSO(s,a))],p),q,B.bhx)}}
 A.aSK.prototype={
 $1(a){return a.length===0?"Requis":null},
 $S:23}
@@ -127447,7 +127447,7 @@ J(a){return A.Bz(new A.aWv(this),this.geP().c5(0,$.beL(),t.ZG).zD(),t.yI)}}
 A.aWv.prototype={
 $2(a,b){var s=b.b
 if(s==null)s=A.b([],t.WZ)
-return A.ox(null,null,A.aAm(new A.aWs(s),J.bG(s),B.fP,new A.aWt()),null,A.aww(B.aaD,B.bhj,new A.aWu(this.a,a)))},
+return A.ox(null,null,A.aAm(new A.aWs(s),J.bG(s),B.fP,new A.aWt()),null,A.aww(B.aaD,B.bhk,new A.aWu(this.a,a)))},
 $S:770}
 A.aWs.prototype={
 $2(a,b){var s=null,r=J.b0(this.a,b),q=A.ay(r.b,s,s,s,s,s,s,s,s),p=r.c
@@ -127486,8 +127486,8 @@ A.zl.prototype={
 ae(){var s=$.al()
 return new A.adD(new A.bb(null,t.am),new A.eq(B.c4,s),new A.eq(B.c4,s),new A.bW(Date.now(),0,!1).wA(36e8))}}
 A.adD.prototype={
-J(a){var s=this,r=null,q=t.p,p=A.cV(A.o1(r,A.bD(A.b([A.i2(!1,s.e,B.zl,!1,r,r,r,1,!1,r,r,r,r,r,r,B.aI,r,new A.aWh()),B.bA,A.i2(!1,s.f,B.aaN,!1,r,r,r,1,!1,r,r,r,r,r,r,B.aI,r,r),B.bA,A.cI(A.b([A.cT(A.ay("Date: "+s.r.WA().j(0),r,r,r,r,r,r,r,r),1,r),A.hl(B.bgW,new A.aWi(s,a),r)],q),B.X,B.P,B.U,0,r)],q),B.X,B.P,B.b3,0,B.W),s.d),r,420)
-return A.mx(A.b([A.hl(B.dY,new A.aWj(a),r),A.nV(B.pb,new A.aWk(s,a))],q),p,B.bh2)}}
+J(a){var s=this,r=null,q=t.p,p=A.cV(A.o1(r,A.bD(A.b([A.i2(!1,s.e,B.zl,!1,r,r,r,1,!1,r,r,r,r,r,r,B.aI,r,new A.aWh()),B.bA,A.i2(!1,s.f,B.aaN,!1,r,r,r,1,!1,r,r,r,r,r,r,B.aI,r,r),B.bA,A.cI(A.b([A.cT(A.ay("Date: "+s.r.WA().j(0),r,r,r,r,r,r,r,r),1,r),A.hl(B.bgX,new A.aWi(s,a),r)],q),B.X,B.P,B.U,0,r)],q),B.X,B.P,B.b3,0,B.W),s.d),r,420)
+return A.mx(A.b([A.hl(B.dY,new A.aWj(a),r),A.nV(B.pb,new A.aWk(s,a))],q),p,B.bh3)}}
 A.aWh.prototype={
 $1(a){return a.length===0?"Requis":null},
 $S:23}
@@ -127539,7 +127539,7 @@ p=Date.now()
 A.cy(this.b,!1).i5(new A.fQ(o,s,r,o,n,o,new A.bW(q,0,!1),new A.bW(p,0,!1)))},
 $S:0}
 A.BH.prototype={
-m5(a,b){var s,r,q=null,p=6e5,o=b.jL($.beI(),t.S),n=A.a5K(A.j9(A.j2(A.d5(q,B.aa_,B.a_,q,new A.cL(q,q,q,A.cD(12),q,B.js,B.aW),q,q,q,q,B.eB,q,q,q)),q,A.b3(0,0,p,0,0,0)),B.F,B.wK,q,A.b3(0,0,p,0,0,0),B.k4),m=A.j2(B.bhE),l=A.b3(0,0,p,0,0,0)
+m5(a,b){var s,r,q=null,p=6e5,o=b.jL($.beI(),t.S),n=A.a5K(A.j9(A.j2(A.d5(q,B.aa_,B.a_,q,new A.cL(q,q,q,A.cD(12),q,B.js,B.aW),q,q,q,q,B.eB,q,q,q)),q,A.b3(0,0,p,0,0,0)),B.F,B.wK,q,A.b3(0,0,p,0,0,0),B.k4),m=A.j2(B.bgS),l=A.b3(0,0,p,0,0,0)
 l=A.j9(m,A.b3(0,0,2e5,0,0,0),l)
 m=A.b3(0,0,p,0,0,0)
 s=t.p
@@ -127605,13 +127605,13 @@ A.afp.prototype={
 aC(){this.b5()
 this.geP().c5(0,$.beF(),t.b0).xR()},
 J(a){var s,r,q,p,o,n,m=this,l=null,k=8e5,j=6e5,i=B.p.ap(25.5),h=A.b([A.a6(i,B.an.q()>>>16&255,B.an.q()>>>8&255,B.an.q()&255),A.a6(13,B.f0.q()>>>16&255,B.f0.q()>>>8&255,B.f0.q()&255),B.dP],t.t_),g=A.cD(24),f=B.p.ap(76.5),e=t.V,d=A.b([new A.c1(0,B.aL,A.a6(f,B.an.q()>>>16&255,B.an.q()>>>8&255,B.an.q()&255),B.ue,20)],e),c=A.a5K(A.j9(A.j2(A.dv(B.z9,B.L,l,64)),l,A.b3(0,0,k,0,0,0)),B.b5w,B.wK,l,A.b3(0,0,k,0,0,0),B.k4),b=A.I(a).ok.b
-b=A.j2(A.ay("OneSave",l,l,l,l,b==null?l:b.C_(B.L,B.bt),l,l,l))
+b=A.j2(A.ay("Edusave",l,l,l,l,b==null?l:b.C_(B.L,B.bt),l,l,l))
 s=A.b3(0,0,k,0,0,0)
 s=A.j9(b,A.b3(0,0,2e5,0,0,0),s)
 b=A.b3(0,0,j,0,0,0)
 b=A.yx(s,0.3,A.b3(0,0,2e5,0,0,0),b,0)
 s=A.I(a).ok.y
-s=A.j2(A.ay("CNF C\xf4te d'Ivoire",l,l,l,l,s==null?l:s.bT(A.a6(204,B.L.q()>>>16&255,B.L.q()>>>8&255,B.L.q()&255)),l,l,l))
+s=A.j2(A.ay("Gestion de projets \xe9ducatifs",l,l,l,l,s==null?l:s.bT(A.a6(204,B.L.q()>>>16&255,B.L.q()>>>8&255,B.L.q()&255)),l,l,l))
 r=A.b3(0,0,k,0,0,0)
 r=A.j9(s,A.b3(0,0,4e5,0,0,0),r)
 s=A.b3(0,0,j,0,0,0)
@@ -127747,7 +127747,7 @@ A.cy(this.b,!1).i5(new A.hf(null,s,p,new A.bW(r,0,!1),new A.bW(q,0,!1)))},
 $S:0}
 A.a4u.prototype={
 m5(a,b){var s=null
-return new A.I7(3,A.ox(A.Ae(s,new A.No(B.aYE,B.du,new A.cL(s,s,s,A.cD(12),s,B.js,B.aW),B.bbP,B.L,A.a6(153,B.cn.q()>>>16&255,B.cn.q()>>>8&255,B.cn.q()&255),s),B.bh9),B.dP,B.bbR,s,s),s)}}
+return new A.I7(3,A.ox(A.Ae(s,new A.No(B.aYE,B.du,new A.cL(s,s,s,A.cD(12),s,B.js,B.aW),B.bbP,B.L,A.a6(153,B.cn.q()>>>16&255,B.cn.q()>>>8&255,B.cn.q()&255),s),B.bhb),B.dP,B.bbR,s,s),s)}}
 A.Fq.prototype={
 m5(a,b){return A.Bz(new A.b_Y(this),b.c5(0,$.b9m(),t.Jf).cF(0),t.aS)},
 aui(a){switch(a){case"CLAC":return B.abr
@@ -127989,7 +127989,7 @@ ae(){return new A.aha(new A.bb(null,t.am),new A.eq(B.c4,$.al()))}}
 A.aha.prototype={
 J(a){var s=this,r=null,q=t.N,p=t.p
 q=A.cV(A.o1(r,A.bD(A.b([A.i2(!1,s.e,B.zl,!1,r,r,r,1,!1,r,r,r,r,r,r,B.aI,r,new A.b00()),B.bA,A.wf(B.aaX,B.aVb,new A.b01(s),s.f,q),B.bA,A.wf(B.aaT,B.aXh,new A.b02(s),s.r,q)],p),B.X,B.P,B.b3,0,B.W),s.d),r,420)
-return A.mx(A.b([A.hl(B.dY,new A.b03(a),r),A.nV(B.pb,new A.b04(s,a))],p),q,B.bh5)}}
+return A.mx(A.b([A.hl(B.dY,new A.b03(a),r),A.nV(B.pb,new A.b04(s,a))],p),q,B.bh7)}}
 A.b00.prototype={
 $1(a){return a.length===0?"Requis":null},
 $S:23}
@@ -128042,18 +128042,18 @@ k=n?B.Vb:B.ze
 k=A.ha(j,j,j,k,j,j,n?j:new A.aM6(r),j,j,j,j)
 n=k}else n=j
 k=t.p
-n=A.b([A.iI(!1,j,j,j,!0,j,j,j,!0,j,m,j,j,j,j,j,!1,j,j,j,j,l,j,B.bht,n,j)],k)
+n=A.b([A.iI(!1,j,j,j,!0,j,j,j,!0,j,m,j,j,j,j,j,!1,j,j,j,j,l,j,B.bhu,n,j)],k)
 m=s.c
 if(m!=null)n.push(new A.aY(B.du,A.ay("Derni\xe8re sync: "+this.atu(m),j,j,j,j,A.I(a).ok.Q,j,j,j),j))
 m=s.e
 if(m!=null){l=A.I(a).ok.Q
 l=l==null?j:l.bT(B.cO)
 n.push(new A.aY(B.du,A.ay("Erreur: "+m,j,j,j,j,l,j,j,j),j))}m=p.r
-m=A.b([i,B.bA,A.h5(A.bD(n,B.X,B.P,B.U,0,B.W),j,j,j),B.bA,A.h5(B.abz,j,j,j),B.bA,A.h5(A.iI(!1,j,j,j,!0,j,j,j,!0,j,A.dv(B.a9J,A.I(a).ax.b,j,j),j,j,j,j,j,!1,j,j,j,j,A.ay(m.agt(q),j,j,j,j,j,j,j,j),j,B.bhD,A.cI(A.b([A.ay(m.ags(q),j,j,j,j,B.bgd,j,j,j),B.dE,A.ha(j,j,j,B.lZ,j,j,new A.aM7(p),j,j,j,j)],k),B.X,B.P,B.b3,0,j),j),j,j,j),B.bA],k)
+m=A.b([i,B.bA,A.h5(A.bD(n,B.X,B.P,B.U,0,B.W),j,j,j),B.bA,A.h5(B.aby,j,j,j),B.bA,A.h5(A.iI(!1,j,j,j,!0,j,j,j,!0,j,A.dv(B.a9J,A.I(a).ax.b,j,j),j,j,j,j,j,!1,j,j,j,j,A.ay(m.agt(q),j,j,j,j,j,j,j,j),j,B.bhE,A.cI(A.b([A.ay(m.ags(q),j,j,j,j,B.bgd,j,j,j),B.dE,A.ha(j,j,j,B.lZ,j,j,new A.aM7(p),j,j,j,j)],k),B.X,B.P,B.b3,0,j),j),j,j,j),B.bA],k)
 if((o==null?j:B.l.p(A.bc5(o.d),"manage_users"))===!0)B.l.P(m,A.b([A.h5(A.iI(!1,j,j,j,!0,j,j,j,!0,j,A.dv(B.rR,A.I(a).ax.b,j,j),j,j,j,j,new A.aM8(a),!1,j,j,j,j,B.bgM,j,B.VW,B.lZ,j),j,j,j),B.bA],k))
-m.push(A.h5(A.iI(!1,j,j,j,!0,j,j,j,!0,j,A.dv(B.yY,A.I(a).ax.b,j,j),j,j,j,j,new A.aM9(a),!1,j,j,j,j,B.bha,j,B.W_,B.lZ,j),j,j,j))
+m.push(A.h5(A.iI(!1,j,j,j,!0,j,j,j,!0,j,A.dv(B.yY,A.I(a).ax.b,j,j),j,j,j,j,new A.aM9(a),!1,j,j,j,j,B.bhc,j,B.W_,B.lZ,j),j,j,j))
 m.push(B.bA)
-m.push(A.h5(B.aby,j,j,j))
+m.push(A.h5(B.abz,j,j,j))
 return A.bi9(m,B.fP,j,!1)},
 atu(a){var s,r=new A.bW(Date.now(),0,!1).hi(a).a,q=B.u.cl(r,6e7)
 if(q<1)return"\xc0 l'instant"
@@ -128258,7 +128258,7 @@ J(a){var s,r=this,q=null,p=A.i2(!1,r.x,B.zm,!1,q,q,q,1,!1,q,q,q,q,q,q,B.aI,q,new
 l=A.a0(new A.a2(B.m5,new A.aRr(),l),l.h("aK.E"))
 s=t.p
 m=A.o1(q,A.bD(A.b([p,B.b1,o,B.b1,n,B.b1,A.wf(B.zj,l,new A.aRs(r),m,t.yV)],s),B.X,B.P,B.b3,0,B.W),r.w)
-return A.mx(A.b([A.hl(B.dY,new A.aRt(a),q),A.nV(B.vn,r.gaoM())],s),m,B.bhv)},
+return A.mx(A.b([A.hl(B.dY,new A.aRt(a),q),A.nV(B.vn,r.gaoM())],s),m,B.bhw)},
 aoN(){var s,r,q=this
 if(q.w.gU().kP()){s=q.geP().c5(0,$.Go().glu(),t.J_)
 r=B.o.cM(q.x.a.a)
@@ -128317,7 +128317,7 @@ J(a){var s,r=this,q=null,p=A.i2(!1,r.x,B.zm,!1,q,q,q,1,!1,q,q,q,q,q,q,B.aI,q,new
 m=A.a0(new A.a2(B.m5,new A.aW6(),m),m.h("aK.E"))
 s=t.p
 n=A.o1(q,A.bD(A.b([p,B.b1,o,B.b1,A.wf(B.zj,m,new A.aW7(r),n,t.yV)],s),B.X,B.P,B.b3,0,B.W),r.w)
-return A.mx(A.b([A.hl(B.dY,new A.aW8(a),q),A.nV(B.W0,r.gaHI())],s),n,B.bh6)},
+return A.mx(A.b([A.hl(B.dY,new A.aW8(a),q),A.nV(B.W0,r.gaHI())],s),n,B.bh8)},
 aHJ(){var s,r,q,p=this
 if(p.w.gU().kP()){s=p.geP().c5(0,$.Go().glu(),t.J_)
 r=p.a.d.a
@@ -128361,7 +128361,7 @@ J(a){var s,r=this,q=null,p=A.ay("Utilisateur: "+r.a.d.b,q,q,q,q,q,q,q,q),o=r.w,n
 n=A.a0(new A.a2(B.m5,new A.aTI(a),n),n.h("aK.E"))
 s=t.p
 o=A.bD(A.b([p,B.b1,A.wf(B.aaW,n,new A.aTJ(r),o,t.yV)],s),B.X,B.P,B.b3,0,B.W)
-return A.mx(A.b([A.hl(B.dY,new A.aTK(a),q),A.nV(B.bh8,r.gaqb())],s),o,B.W2)},
+return A.mx(A.b([A.hl(B.dY,new A.aTK(a),q),A.nV(B.bha,r.gaqb())],s),o,B.W2)},
 aqc(){var s=this,r=s.geP().c5(0,$.Go().glu(),t.J_),q=s.a.d.a
 q.toString
 r.BS(q,s.w)
@@ -128396,7 +128396,7 @@ s.R$=r
 s.a0$=0
 this.aI()},
 J(a){var s=this,r=null,q=t.p,p=A.o1(r,A.bD(A.b([A.ay("Utilisateur: "+s.a.d.b,r,r,r,r,r,r,r,r),B.b1,A.i2(!1,s.x,B.aaR,!1,r,r,r,1,!0,r,r,r,r,r,r,B.aI,r,new A.b1s()),B.b1,A.i2(!1,s.y,B.aaP,!1,r,r,r,1,!0,r,r,r,r,r,r,B.aI,r,new A.b1t(s))],q),B.X,B.P,B.b3,0,B.W),s.w)
-return A.mx(A.b([A.hl(B.dY,new A.b1u(a),r),A.nV(B.bgY,s.gaDA())],q),p,B.VY)},
+return A.mx(A.b([A.hl(B.dY,new A.b1u(a),r),A.nV(B.bgZ,s.gaDA())],q),p,B.VY)},
 aDB(){var s,r,q=this
 if(q.w.gU().kP()){s=q.geP().c5(0,$.Go().glu(),t.J_)
 r=q.a.d.a
@@ -128545,7 +128545,7 @@ var $async$Qi=A.u(function(a,b){if(a===1)return A.p(b,r)
 for(;;)switch(s){case 0:q.X(new A.b32(q,q.geP().c5(0,$.V7(),t.Te)))
 return A.q(null,r)}})
 return A.r($async$Qi,r)},
-J(a){var s,r,q=this,p=null,o=t.p,n=A.b([new A.a7h(q.y,new A.b35(q),B.bhm,B.bgR,p)],o)
+J(a){var s,r,q=this,p=null,o=t.p,n=A.b([new A.a7h(q.y,new A.b35(q),B.bhn,B.bgR,p)],o)
 if(q.y){s=A.ay("Intervalle de synchronisation (minutes)",p,p,p,p,p,p,p,p)
 r=q.z
 B.l.P(n,A.b([B.bA,s,new A.MY(r,new A.b36(q),5,120,23,""+r+" min",p)],o))}n.push(B.qZ)
@@ -128553,7 +128553,7 @@ n.push(A.aOB(p,B.ff,!1,p,!0,B.aq,p,A.bdZ(),q.w,p,p,p,p,p,2,B.aaO,B.aU,!0,p,!0,p,
 n.push(B.bA)
 n.push(A.aOB(p,B.ff,!1,p,!0,B.aq,p,A.bdZ(),q.x,p,p,p,p,p,2,B.aaJ,B.aU,!0,p,!0,p,!1,p,B.fs,p,p,p,p,p,p,p,p,1,p,p,!0,"\u2022",p,p,p,p,p,!1,p,p,!1,p,!0,p,B.lA,p,p,p,p,p,p,p,p,p,p,p,p,!0,B.aI,p,B.p6,p,p,p,p))
 n=A.bD(n,B.X,B.P,B.b3,0,B.W)
-return A.mx(A.b([A.hl(B.dY,new A.b37(a),p),A.nV(B.bh_,q.gaEb())],o),n,B.bhy)},
+return A.mx(A.b([A.hl(B.dY,new A.b37(a),p),A.nV(B.bh0,q.gaEb())],o),n,B.bhz)},
 x8(){var s=0,r=A.t(t.H),q=this,p,o
 var $async$x8=A.u(function(a,b){if(a===1)return A.p(b,r)
 for(;;)switch(s){case 0:o=q.geP().c5(0,$.V7().glu(),t.t8)
@@ -140261,15 +140261,15 @@ B.abv=new A.x8(1,"titleHeight")
 B.abw=new A.x8(2,"top")
 B.zB=new A.x8(3,"center")
 B.abx=new A.x8(4,"bottom")
-B.aa7=new A.cb(B.z4,null,null,null,null)
-B.bgU=new A.be("\xc0 propos",null,null,null,null,null,null,null,null,null,null)
-B.bhd=new A.be("OneSave \xa9 CNF C\xf4te d'Ivoire",null,null,null,null,null,null,null,null,null,null)
-B.aby=new A.tp(B.aa7,B.bgU,B.bhd,null,null,null,null,null,null,null,!0,null,null,!1,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
 B.a9G=new A.b9(58729,"MaterialIcons",!1)
 B.aau=new A.cb(B.a9G,null,null,null,null)
-B.bhu=new A.be("S\xe9curit\xe9 et confidentialit\xe9",null,null,null,null,null,null,null,null,null,null)
-B.bhs=new A.be("Donn\xe9es chiffr\xe9es localement",null,null,null,null,null,null,null,null,null,null)
-B.abz=new A.tp(B.aau,B.bhu,B.bhs,null,null,null,null,null,null,null,!0,null,null,!1,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
+B.bhv=new A.be("S\xe9curit\xe9 et confidentialit\xe9",null,null,null,null,null,null,null,null,null,null)
+B.bht=new A.be("Donn\xe9es chiffr\xe9es localement",null,null,null,null,null,null,null,null,null,null)
+B.aby=new A.tp(B.aau,B.bhv,B.bht,null,null,null,null,null,null,null,!0,null,null,!1,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
+B.aa7=new A.cb(B.z4,null,null,null,null)
+B.bgV=new A.be("\xc0 propos",null,null,null,null,null,null,null,null,null,null)
+B.bh4=new A.be("Edusave \xa9 C\xf4te d'Ivoire",null,null,null,null,null,null,null,null,null,null)
+B.abz=new A.tp(B.aa7,B.bgV,B.bh4,null,null,null,null,null,null,null,!0,null,null,!1,null,null,!1,null,null,null,null,null,null,null,!0,null,null)
 B.abA=s(["de gen.","de febr.","de mar\xe7","d\u2019abr.","de maig","de juny","de jul.","d\u2019ag.","de set.","d\u2019oct.","de nov.","de des."],t.s)
 B.fU=s([82,9,106,213,48,54,165,56,191,64,163,158,129,243,215,251,124,227,57,130,155,47,255,135,52,142,67,68,196,222,233,203,84,123,148,50,166,194,35,61,238,76,149,11,66,250,195,78,8,46,161,102,40,217,36,178,118,91,162,73,109,139,209,37,114,248,246,100,134,104,152,22,212,164,92,204,93,101,182,146,108,112,72,80,253,237,185,218,94,21,70,87,167,141,157,132,144,216,171,0,140,188,211,10,247,228,88,5,184,179,69,6,208,44,30,143,202,63,15,2,193,175,189,3,1,19,138,107,58,145,17,65,79,103,220,234,151,242,207,206,240,180,230,115,150,172,116,34,231,173,53,133,226,249,55,232,28,117,223,110,71,241,26,113,29,41,197,137,111,183,98,14,170,24,190,27,252,86,62,75,198,210,121,32,154,219,192,254,120,205,90,244,31,221,168,51,136,7,199,49,177,18,16,89,39,128,236,95,96,81,127,169,25,181,74,13,45,229,122,159,147,201,156,239,160,224,59,77,174,42,245,176,200,235,187,60,131,83,153,97,23,43,4,126,186,119,214,38,225,105,20,99,85,33,12,125],t.t)
 B.zC=s(["\u0458\u0430\u043d.","\u0444\u0435\u0432.","\u043c\u0430\u0440.","\u0430\u043f\u0440.","\u043c\u0430\u0458","\u0458\u0443\u043d.","\u0458\u0443\u043b.","\u0430\u0432\u0433.","\u0441\u0435\u043f.","\u043e\u043a\u0442.","\u043d\u043e\u0435.","\u0434\u0435\u043a."],t.s)
@@ -140281,12 +140281,12 @@ B.WJ=new A.uy(2,"cover")
 B.abE=s([B.bjG,B.bjH,B.WJ],A.aa("x<uy>"))
 B.zD=s(["\u0416","\u0414","\u0421","\u0421","\u0411","\u0416","\u0421"],t.s)
 B.abF=s(["\u0434\u043e \u043d. \u044d.","\u043d. \u044d."],t.s)
-B.bh1=new A.be("Jeune",null,null,null,null,null,null,null,null,null,null)
-B.a3j=new A.ei("Jeune",B.bh1,B.bQ,null,t.b7)
+B.bh2=new A.be("Jeune",null,null,null,null,null,null,null,null,null,null)
+B.a3j=new A.ei("Jeune",B.bh2,B.bQ,null,t.b7)
 B.bhH=new A.be("Femme",null,null,null,null,null,null,null,null,null,null)
 B.a36=new A.ei("Femme",B.bhH,B.bQ,null,t.b7)
-B.bhe=new A.be("Cin\xe9aste",null,null,null,null,null,null,null,null,null,null)
-B.a34=new A.ei("Cin\xe9aste",B.bhe,B.bQ,null,t.b7)
+B.bhf=new A.be("Cin\xe9aste",null,null,null,null,null,null,null,null,null,null)
+B.a34=new A.ei("Cin\xe9aste",B.bhf,B.bQ,null,t.b7)
 B.abG=s([B.a3j,B.a36,B.a34],t.FG)
 B.WE=new A.hM(0,"admin")
 B.bjt=new A.hM(1,"manager")
@@ -140295,10 +140295,10 @@ B.m5=s([B.WE,B.bjt,B.ky],A.aa("x<hM>"))
 B.abH=s(["\u0d9a\u0dca\u200d\u0dbb\u0dd2\u0dc3\u0dca\u0dad\u0dd4 \u0db4\u0dd6\u0dbb\u0dca\u0dc0","\u0d9a\u0dca\u200d\u0dbb\u0dd2\u0dc3\u0dca\u0dad\u0dd4 \u0dc0\u0dbb\u0dca\u0dc2"],t.s)
 B.abI=s([0,0],t.t)
 B.abK=s(["y\u5e74M\u6708d\u65e5EEEE","y\u5e74M\u6708d\u65e5","y\u5e74M\u6708d\u65e5","y/M/d"],t.s)
-B.bhz=new A.be("F",null,null,null,null,null,null,null,null,null,null)
-B.a3h=new A.ei("F",B.bhz,B.bQ,null,t.b7)
-B.bgX=new A.be("M",null,null,null,null,null,null,null,null,null,null)
-B.a3d=new A.ei("M",B.bgX,B.bQ,null,t.b7)
+B.bhA=new A.be("F",null,null,null,null,null,null,null,null,null,null)
+B.a3h=new A.ei("F",B.bhA,B.bQ,null,t.b7)
+B.bgY=new A.be("M",null,null,null,null,null,null,null,null,null,null)
+B.a3d=new A.ei("M",B.bgY,B.bQ,null,t.b7)
 B.aeA=s([B.a3h,B.a3d],t.FG)
 B.aeG=s([110,117,108,108],t.t)
 B.zI=s(["\u06cc","\u062f","\u0633","\u0686","\u067e","\u062c","\u0634"],t.s)
@@ -140504,10 +140504,10 @@ B.aUT=s([6.43023796,2.98020421],t.n)
 B.FJ=s([B.aUS,B.azF,B.aZ0,B.aZh,B.aTr,B.aU4,B.aWW,B.aVi,B.aWv,B.aTD,B.aUT],t.zg)
 B.bgN=new A.be("GAF",null,null,null,null,null,null,null,null,null,null)
 B.a37=new A.ei("GAF",B.bgN,B.bQ,null,t.b7)
-B.bho=new A.be("Ambassade",null,null,null,null,null,null,null,null,null,null)
-B.a38=new A.ei("Ambassade",B.bho,B.bQ,null,t.b7)
-B.bhf=new A.be("ONG",null,null,null,null,null,null,null,null,null,null)
-B.a3b=new A.ei("ONG",B.bhf,B.bQ,null,t.b7)
+B.bhp=new A.be("Ambassade",null,null,null,null,null,null,null,null,null,null)
+B.a38=new A.ei("Ambassade",B.bhp,B.bQ,null,t.b7)
+B.bhg=new A.be("ONG",null,null,null,null,null,null,null,null,null,null)
+B.a3b=new A.ei("ONG",B.bhg,B.bQ,null,t.b7)
 B.aTd=s([B.a37,B.a38,B.a3b],t.FG)
 B.aTe=s(["EEEE\u060c d MMMM\u060c y","d MMMM\u060c y","d MMM\u060c y","d/M/yy"],t.s)
 B.aTf=s(["v.Chr.","n.Chr."],t.s)
@@ -140749,14 +140749,14 @@ B.aV9=s(["1\u0b2e \u0b24\u0b4d\u0b30\u0b5f\u0b2e\u0b3e\u0b38","2\u0b5f \u0b24\u0
 B.GN=s([0,41,61,101,131,181,251,301,360],t.n)
 B.aVa=s(["\u0642\u0628\u0644 \u0627\u0644\u0645\u064a\u0644\u0627\u062f","\u0645\u064a\u0644\u0627\u062f\u064a"],t.s)
 B.GO=s(["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],t.s)
-B.bhc=new A.be("CLAC",null,null,null,null,null,null,null,null,null,null)
-B.a3i=new A.ei("CLAC",B.bhc,B.bQ,null,t.b7)
-B.bgT=new A.be("IFADEM",null,null,null,null,null,null,null,null,null,null)
-B.a39=new A.ei("IFADEM",B.bgT,B.bQ,null,t.b7)
-B.bhq=new A.be("ELAN",null,null,null,null,null,null,null,null,null,null)
-B.a3a=new A.ei("ELAN",B.bhq,B.bQ,null,t.b7)
-B.bhn=new A.be("Autre",null,null,null,null,null,null,null,null,null,null)
-B.a3g=new A.ei("AUTRE",B.bhn,B.bQ,null,t.b7)
+B.bhe=new A.be("CLAC",null,null,null,null,null,null,null,null,null,null)
+B.a3i=new A.ei("CLAC",B.bhe,B.bQ,null,t.b7)
+B.bgU=new A.be("IFADEM",null,null,null,null,null,null,null,null,null,null)
+B.a39=new A.ei("IFADEM",B.bgU,B.bQ,null,t.b7)
+B.bhr=new A.be("ELAN",null,null,null,null,null,null,null,null,null,null)
+B.a3a=new A.ei("ELAN",B.bhr,B.bQ,null,t.b7)
+B.bho=new A.be("Autre",null,null,null,null,null,null,null,null,null,null)
+B.a3g=new A.ei("AUTRE",B.bho,B.bQ,null,t.b7)
 B.aVb=s([B.a3i,B.a39,B.a3a,B.a3g],t.FG)
 B.bmw=new A.r9(0,0)
 B.bmB=new A.r9(1,0.05)
@@ -141027,14 +141027,14 @@ B.aXe=s([B.q7,B.Y3,B.Y2,B.Y4,B.Y5,B.Y6,B.Y7,B.Ya,B.Y8,B.Y1,B.Y9,B.Yb,B.Yc,B.Yd],
 B.aXf=s(["Sul","Llun","Maw","Mer","Iau","Gwen","Sad"],t.s)
 B.id=s(["1\uc6d4","2\uc6d4","3\uc6d4","4\uc6d4","5\uc6d4","6\uc6d4","7\uc6d4","8\uc6d4","9\uc6d4","10\uc6d4","11\uc6d4","12\uc6d4"],t.s)
 B.aXg=s(["\u0441","\u043b","\u0431","\u043a","\u0442","\u0447","\u043b","\u0441","\u0432","\u0436","\u043b","\u0433"],t.s)
-B.bhB=new A.be("Planifi\xe9",null,null,null,null,null,null,null,null,null,null)
-B.a3f=new A.ei("PLANIFIE",B.bhB,B.bQ,null,t.b7)
-B.bh3=new A.be("En cours",null,null,null,null,null,null,null,null,null,null)
-B.a3c=new A.ei("EN_COURS",B.bh3,B.bQ,null,t.b7)
-B.bh0=new A.be("Termin\xe9",null,null,null,null,null,null,null,null,null,null)
-B.a35=new A.ei("TERMINE",B.bh0,B.bQ,null,t.b7)
-B.bhg=new A.be("Cl\xf4tur\xe9",null,null,null,null,null,null,null,null,null,null)
-B.a3e=new A.ei("CLOTURE",B.bhg,B.bQ,null,t.b7)
+B.bhC=new A.be("Planifi\xe9",null,null,null,null,null,null,null,null,null,null)
+B.a3f=new A.ei("PLANIFIE",B.bhC,B.bQ,null,t.b7)
+B.bh5=new A.be("En cours",null,null,null,null,null,null,null,null,null,null)
+B.a3c=new A.ei("EN_COURS",B.bh5,B.bQ,null,t.b7)
+B.bh1=new A.be("Termin\xe9",null,null,null,null,null,null,null,null,null,null)
+B.a35=new A.ei("TERMINE",B.bh1,B.bQ,null,t.b7)
+B.bhh=new A.be("Cl\xf4tur\xe9",null,null,null,null,null,null,null,null,null,null)
+B.a3e=new A.ei("CLOTURE",B.bhh,B.bQ,null,t.b7)
 B.aXh=s([B.a3f,B.a3c,B.a35,B.a3e],t.FG)
 B.nW=s(["D","S","T","Q","Q","S","S"],t.s)
 B.eO=new A.hm(0,"system")
@@ -146521,16 +146521,16 @@ B.bad=new A.aL(B.h6,!0,!0,!1,!1,B.d3)
 B.bae=new A.aL(B.jQ,!1,!1,!1,!0,B.a2)
 B.baf=new A.aL(B.h2,!0,!1,!1,!1,B.d4)
 B.er=new A.M(!0,null,null,null,null,null,null,B.bt,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bh4=new A.be("URL de base",null,B.er,null,null,null,null,null,null,null,null)
-B.bhb=new A.be("L'URL de base de votre API externe (ex: https://api.example.com)",null,null,null,null,null,null,null,null,null,null)
+B.bh6=new A.be("URL de base",null,B.er,null,null,null,null,null,null,null,null)
+B.bhd=new A.be("L'URL de base de votre API externe (ex: https://api.example.com)",null,null,null,null,null,null,null,null,null,null)
 B.b1=new A.eP(null,16,null,null)
 B.bgQ=new A.be("Token d'authentification",null,B.er,null,null,null,null,null,null,null,null)
-B.bhl=new A.be("Token Bearer ou JWT pour l'authentification (optionnel)",null,null,null,null,null,null,null,null,null,null)
-B.bh7=new A.be("Cl\xe9 API",null,B.er,null,null,null,null,null,null,null,null)
-B.bhA=new A.be("Cl\xe9 d'API pour l'authentification (optionnelle)",null,null,null,null,null,null,null,null,null,null)
-B.bhp=new A.be("Test de connexion",null,B.er,null,null,null,null,null,null,null,null)
-B.bhk=new A.be("Teste la connectivit\xe9 avec l'API configur\xe9e",null,null,null,null,null,null,null,null,null,null)
-B.aOc=s([B.bh4,B.bhb,B.b1,B.bgQ,B.bhl,B.b1,B.bh7,B.bhA,B.b1,B.bhp,B.bhk],t.p)
+B.bhm=new A.be("Token Bearer ou JWT pour l'authentification (optionnel)",null,null,null,null,null,null,null,null,null,null)
+B.bh9=new A.be("Cl\xe9 API",null,B.er,null,null,null,null,null,null,null,null)
+B.bhB=new A.be("Cl\xe9 d'API pour l'authentification (optionnelle)",null,null,null,null,null,null,null,null,null,null)
+B.bhq=new A.be("Test de connexion",null,B.er,null,null,null,null,null,null,null,null)
+B.bhl=new A.be("Teste la connectivit\xe9 avec l'API configur\xe9e",null,null,null,null,null,null,null,null,null,null)
+B.aOc=s([B.bh6,B.bhd,B.b1,B.bgQ,B.bhm,B.b1,B.bh9,B.bhB,B.b1,B.bhq,B.bhl],t.p)
 B.a26=new A.HD(B.b6,B.P,B.b3,B.aQ,null,B.W,null,0,B.aOc,null)
 B.bag=new A.yu(B.b6,null,null,null,B.a26,B.aU,null,null)
 B.bah=new A.F(1e5,1e5)
@@ -146596,12 +146596,12 @@ B.baU=new A.oD(5,"timeout")
 B.baV=new A.Dm(null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bgL=new A.be("Param\xe8tres sauvegard\xe9s",null,null,null,null,null,null,null,null,null,null)
 B.baW=new A.oC(B.bgL,B.dB,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
-B.bhh=new A.be("Configuration sauvegard\xe9e avec succ\xe8s",null,null,null,null,null,null,null,null,null,null)
-B.baX=new A.oC(B.bhh,B.dB,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
-B.bgV=new A.be("Configuration supprim\xe9e",null,null,null,null,null,null,null,null,null,null)
-B.baY=new A.oC(B.bgV,B.h8,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
-B.bhC=new A.be("Veuillez saisir une URL de base",null,null,null,null,null,null,null,null,null,null)
-B.baZ=new A.oC(B.bhC,B.h8,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
+B.bhi=new A.be("Configuration sauvegard\xe9e avec succ\xe8s",null,null,null,null,null,null,null,null,null,null)
+B.baX=new A.oC(B.bhi,B.dB,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
+B.bgW=new A.be("Configuration supprim\xe9e",null,null,null,null,null,null,null,null,null,null)
+B.baY=new A.oC(B.bgW,B.h8,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
+B.bhD=new A.be("Veuillez saisir une URL de base",null,null,null,null,null,null,null,null,null,null)
+B.baZ=new A.oC(B.bhD,B.h8,null,null,null,null,null,null,null,null,null,null,null,B.f5,!1,null,null,null,B.aq,null)
 B.Vm=new A.N2(0,"permissive")
 B.bb_=new A.N2(1,"normal")
 B.bb0=new A.N2(2,"forced")
@@ -147003,35 +147003,35 @@ B.bgO=new A.be("Th\xe8me",null,null,null,null,null,null,null,null,null,null)
 B.pb=new A.be("Enregistrer",null,null,null,null,null,null,null,null,null,null)
 B.bgP=new A.be("Supprimer l'utilisateur",null,null,null,null,null,null,null,null,null,null)
 B.bgR=new A.be("Synchroniser automatiquement les donn\xe9es",null,null,null,null,null,null,null,null,null,null)
-B.bgS=new A.be("\xcates-vous s\xfbr de vouloir supprimer la configuration API ?",null,null,null,null,null,null,null,null,null,null)
-B.bgW=new A.be("Choisir",null,null,null,null,null,null,null,null,null,null)
-B.bgY=new A.be("R\xe9initialiser",null,null,null,null,null,null,null,null,null,null)
-B.bgZ=new A.be("Supprimer",null,null,null,null,null,null,null,null,null,null)
-B.bh_=new A.be("Sauvegarder",null,null,null,null,null,null,null,null,null,null)
-B.bh2=new A.be("Ajouter un \xe9v\xe9nement",null,null,null,null,null,null,null,null,null,null)
+B.bgS=new A.be("Edusave",null,null,null,null,null,null,null,null,null,null)
+B.bgT=new A.be("\xcates-vous s\xfbr de vouloir supprimer la configuration API ?",null,null,null,null,null,null,null,null,null,null)
+B.bgX=new A.be("Choisir",null,null,null,null,null,null,null,null,null,null)
+B.bgZ=new A.be("R\xe9initialiser",null,null,null,null,null,null,null,null,null,null)
+B.bh_=new A.be("Supprimer",null,null,null,null,null,null,null,null,null,null)
+B.bh0=new A.be("Sauvegarder",null,null,null,null,null,null,null,null,null,null)
+B.bh3=new A.be("Ajouter un \xe9v\xe9nement",null,null,null,null,null,null,null,null,null,null)
 B.VW=new A.be("Gestion des utilisateurs",null,null,null,null,null,null,null,null,null,null)
-B.bh5=new A.be("Cr\xe9er un projet",null,null,null,null,null,null,null,null,null,null)
-B.bh6=new A.be("Modifier l'utilisateur",null,null,null,null,null,null,null,null,null,null)
+B.bh7=new A.be("Cr\xe9er un projet",null,null,null,null,null,null,null,null,null,null)
+B.bh8=new A.be("Modifier l'utilisateur",null,null,null,null,null,null,null,null,null,null)
 B.vm=new A.be("B\xe9n\xe9ficiaires",null,null,null,null,null,null,null,null,null,null)
-B.bh8=new A.be("Changer",null,null,null,null,null,null,null,null,null,null)
-B.bh9=new A.be("Programmes",null,null,null,null,null,null,null,null,null,null)
-B.bha=new A.be("Int\xe9gration avec des syst\xe8mes externes",null,null,null,null,null,null,null,null,null,null)
+B.bha=new A.be("Changer",null,null,null,null,null,null,null,null,null,null)
+B.bhb=new A.be("Programmes",null,null,null,null,null,null,null,null,null,null)
+B.bhc=new A.be("Int\xe9gration avec des syst\xe8mes externes",null,null,null,null,null,null,null,null,null,null)
 B.VZ=new A.be("R\xe9essayer",null,null,null,null,null,null,null,null,null,null)
 B.dY=new A.be("Annuler",null,null,null,null,null,null,null,null,null,null)
 B.W_=new A.be("Configuration API",null,null,null,null,null,null,null,null,null,null)
-B.bhi=new A.be("Fermer",null,null,null,null,null,null,null,null,null,null)
-B.bhj=new A.be("Nouvel \xe9v\xe9nement",null,null,null,null,null,null,null,null,null,null)
-B.bhm=new A.be("Synchronisation automatique",null,null,null,null,null,null,null,null,null,null)
-B.bhr=new A.be("Aide - Configuration API",null,null,null,null,null,null,null,null,null,null)
-B.bht=new A.be("Synchronisation",null,null,null,null,null,null,null,null,null,null)
+B.bhj=new A.be("Fermer",null,null,null,null,null,null,null,null,null,null)
+B.bhk=new A.be("Nouvel \xe9v\xe9nement",null,null,null,null,null,null,null,null,null,null)
+B.bhn=new A.be("Synchronisation automatique",null,null,null,null,null,null,null,null,null,null)
+B.bhs=new A.be("Aide - Configuration API",null,null,null,null,null,null,null,null,null,null)
+B.bhu=new A.be("Synchronisation",null,null,null,null,null,null,null,null,null,null)
 B.W1=new A.be("",null,null,null,null,null,null,null,null,null,null)
-B.bhv=new A.be("Ajouter un utilisateur",null,null,null,null,null,null,null,null,null,null)
-B.bhw=new A.be("Nouveau b\xe9n\xe9ficiaire",null,null,null,null,null,null,null,null,null,null)
-B.bhx=new A.be("Supprimer la configuration",null,null,null,null,null,null,null,null,null,null)
-B.bhy=new A.be("Param\xe8tres de synchronisation",null,null,null,null,null,null,null,null,null,null)
+B.bhw=new A.be("Ajouter un utilisateur",null,null,null,null,null,null,null,null,null,null)
+B.bhx=new A.be("Nouveau b\xe9n\xe9ficiaire",null,null,null,null,null,null,null,null,null,null)
+B.bhy=new A.be("Supprimer la configuration",null,null,null,null,null,null,null,null,null,null)
+B.bhz=new A.be("Param\xe8tres de synchronisation",null,null,null,null,null,null,null,null,null,null)
 B.vn=new A.be("Ajouter",null,null,null,null,null,null,null,null,null,null)
-B.bhD=new A.be("Langue",null,null,null,null,null,null,null,null,null,null)
-B.bhE=new A.be("OneSave",null,null,null,null,null,null,null,null,null,null)
+B.bhE=new A.be("Langue",null,null,null,null,null,null,null,null,null,null)
 B.bhF=new A.be("Identifiants invalides",null,null,null,null,null,null,null,null,null,null)
 B.bhG=new A.be("Confirmer la suppression",null,null,null,null,null,null,null,null,null,null)
 B.vo=new A.be("Partenaires",null,null,null,null,null,null,null,null,null,null)
