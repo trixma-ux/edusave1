@@ -1,11 +1,11 @@
 {
-    "name": "OneSave - CNF",
-    "short_name": "OneSave",
+    "name": "Edusave",
+    "short_name": "Edusave",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Application multi-plateforme pour la CNF - OneSave",
+    "description": "Application multi-plateforme - Edusave",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
