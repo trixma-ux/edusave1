@@ -112,3 +112,7 @@ logs/
 # Temporary files
 tmp/
 temp/
+
+# Générés par `dart run sqflite_common_ffi_web:setup` (CI)
+/web/sqlite3.wasm
+/web/sqflite_sw.js
