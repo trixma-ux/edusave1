@@ -208,7 +208,7 @@ class _ApiConfigurationScreenState extends ConsumerState<ApiConfigurationScreen>
                                   ),
                                 ),
                                 Text(
-                                  'Connectez OneSave à des systèmes externes',
+                                  'Connectez Edusave à des systèmes externes',
                                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                                     color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
                                   ),

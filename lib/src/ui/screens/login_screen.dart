@@ -83,7 +83,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                 ),
                             const SizedBox(height: 16),
                             Text(
-                              'OneSave',
+                              'Edusave',
                               style: Theme.of(context).textTheme.displayMedium?.copyWith(
                                 color: OneSaveColors.onPrimary,
                                 fontWeight: FontWeight.bold,
@@ -94,7 +94,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                                 .slideY(begin: 0.3, end: 0, duration: 600.ms, delay: 200.ms),
                             const SizedBox(height: 8),
                             Text(
-                              'CNF Côte d\'Ivoire',
+                              'Gestion de projets éducatifs',
                               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                                 color: OneSaveColors.onPrimary.withOpacity(0.8),
                               ),

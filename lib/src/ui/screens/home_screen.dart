@@ -49,7 +49,7 @@ class HomeScreen extends ConsumerWidget {
                   curve: Curves.elasticOut,
                 ),
             const SizedBox(width: 12),
-            const Text('OneSave')
+            const Text('Edusave')
                 .animate()
                 .fadeIn(duration: 600.ms, delay: 200.ms)
                 .slideX(begin: -0.3, end: 0, duration: 600.ms, delay: 200.ms),

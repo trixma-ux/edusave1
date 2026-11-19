@@ -189,7 +189,7 @@ class SettingsScreen extends ConsumerWidget {
           child: const ListTile(
             leading: Icon(Icons.info_outline),
             title: Text('À propos'),
-            subtitle: Text('OneSave © CNF Côte d\'Ivoire'),
+            subtitle: Text('Edusave © Côte d\'Ivoire'),
           ),
         ),
       ],
