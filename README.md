@@ -1,6 +1,6 @@
-# OneSave - Multi-Platform Educational Project Management App
+# Edusave - Multi-Platform Educational Project Management App
 
-OneSave is a comprehensive Flutter application designed for managing educational projects, events, beneficiaries, and partners. Built with modern Flutter architecture and Material 3 design principles, supporting Web, iOS, and Android platforms with real-time data synchronization.
+Edusave is a comprehensive Flutter application designed for managing educational projects, events, beneficiaries, and partners. Built with modern Flutter architecture and Material 3 design principles, supporting Web, iOS, and Android platforms with real-time data synchronization.
 
 ## 🚀 Features
 
@@ -163,7 +163,7 @@ The app supports both light and dark themes with Material 3 design:
 - **Light Theme**: Clean, modern interface with bright colors
 - **Dark Theme**: Eye-friendly dark interface
 - **System Theme**: Automatically follows system preference
-- **Custom Colors**: OneSave brand colors throughout
+- **Custom Colors**: Edusave brand colors throughout
 
 ## 🌍 Internationalization
 
@@ -274,4 +274,4 @@ For support, email support@onesave.ci or create an issue in this repository.
 
 ---
 
-**OneSave** - Empowering Education Through Technology 🎓
+**Edusave** - Empowering Education Through Technology 🎓
